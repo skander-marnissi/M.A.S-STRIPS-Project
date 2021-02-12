@@ -63,6 +63,12 @@ node breadth-first-search.js
 node Asearch.js
 ```
 
+#### To obtain the STRIPS graph of possibilities type:
+
+```bash
+node graph.js
+```
+
 
 *Note: The simulation will take time, so you have to wait 3-5 min depending on your computer resources.*
 
