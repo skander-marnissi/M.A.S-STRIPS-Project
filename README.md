@@ -34,7 +34,7 @@ npm install packages.json
 
 In this project, the final output is an evaluation of three searching technics A* search, depth first search and breadth first search in a simulation.
 
-**Note: all the context of the simulation and report are detail in the Project_Report.pdf**
+*Note: all the context of the simulation and report are detail in the Project_Report.pdf.*
 
 # Usage
 
@@ -44,27 +44,27 @@ In order to process the program and make it work you need to:
 
 ### Step 2: Now execute what ever simulation you want to run:
 
-####To run the depth first search algorithm type:
+#### To run the depth first search algorithm type:
 
 ```bash
 node depth-first-search.js
 ```
 
-####To run the breadth first search algorithm type:
+#### To run the breadth first search algorithm type:
 
 ```bash
 node breadth-first-search.js
 ```
 
 
-####To run the A* search algorithm type:
+#### To run the A* search algorithm type:
 
 ```bash
 node Asearch.js
 ```
 
 
-**Note: The simulation will take time, so you have to wait 3-5 min depending on your computer resources**
+*Note: The simulation will take time, so you have to wait 3-5 min depending on your computer resources.*
 
 
 *SKANDER MARNISSI COPYRIGHT © 2020 - ALL RIGHTS RESERVED*
