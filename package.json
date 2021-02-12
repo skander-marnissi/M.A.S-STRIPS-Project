@@ -1,0 +1,28 @@
+{
+    "name": "strips-multiagentsystem",
+    "version": "0.0.6",
+    "description": "AI planning with STRIPS.",
+    "author": {
+        "name": "Marnissi Skander",
+        "email": "Skander.marnissi@esprit.tn",
+        "url": "https://github.com/SkanderMarnissi/GoT-Visualization-Project/"
+    },
+    "dependencies": {
+        "d3": "3.*",
+        "jsdom": "^9.12.0",
+        "package.json": "^2.0.1",
+        "pegjs": "*",
+        "strips": "*",
+        "xmldom": "*"
+    },
+    "engines": {
+        "node": "*",
+        "npm": "*"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ]
+}

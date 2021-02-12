@@ -1,0 +1,47 @@
+(define (domain trip)
+   (:requirements :strips :typing)
+   (:types student location vehicle gadget
+   )
+
+   (:action walk
+      :parameters (?std - student ?l1 - location ?l2 - location)
+      :precondition (and (at ?std ?l1) (has-mask ?std) (3KM ?l1 ?l2))
+      :effect (and (at ?std ?l2) (not (at ?std ?l1)))
+   )
+
+   (:action open
+      :parameters (?std - student ?g - gadget ?l - location)
+      :precondition (and (at ?std ?l) (at ?g ?l) (not (open ?g)))
+      :effect (and (open ?g))
+   )
+
+   (:action collect-mask
+      :parameters (?std - student ?l - location ?g1 - gadget ?g2 - gadget)
+      :precondition (and (at ?std ?l) (at ?g1 ?l) (open ?g1) (in ?g2 ?g1))
+      :effect (and (has-mask ?std))
+   )
+
+   (:action collect-navigo
+      :parameters (?std - student ?l - location ?g - gadget)
+      :precondition (and (at ?std ?l) (at ?g ?l))
+      :effect (and (has-navigo ?std))
+   )
+
+   (:action generate-authorization
+      :parameters (?std - student ?l - location)
+      :precondition (and (at ?std ?l))
+      :effect (and (has-authorization ?std))
+   )
+   
+   (:action take-train
+      :parameters (?std - student ?l1 - location ?l2 - location ?v - vehicle)
+      :precondition (and (at ?std ?l1) (at ?v ?l1) (20KM ?l1 ?l2) (has-mask ?std) (has-navigo ?std) (has-authorization ?std))
+      :effect (and (at ?std ?l2) (not (at ?std ?l1)) (not (at ?v ?l1)))
+   )
+
+   (:action take-course
+      :parameters (?std1 - student ?std2 - student ?l - location)
+      :precondition (and (at ?std1 ?l) (at ?std2 ?l) (has-mask ?std1))
+      :effect (and (course-taken ?std1) (course-taken ?std2))
+   )
+)

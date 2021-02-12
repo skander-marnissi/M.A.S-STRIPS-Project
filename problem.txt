@@ -1,0 +1,33 @@
+(define (problem citeU-gustaveEiffel)
+   (:domain trip)
+
+   (:objects
+      Fairouz Skander - student
+      home gustaveEiffel citeU chateletB chateletA noisyChamps - location
+      mask box navigo authorization- gadget
+      RERA RERB - vehicle
+   )
+
+   (:init
+
+      (at Fairouz home)
+      (at navigo home)
+      (at box home)
+      (in mask box)
+
+      (at Skander gustaveEiffel)
+
+      (3KM home citeU)      
+      (20KM citeU chateletB)
+      (3KM chateletB chateletA)
+      (20KM chateletA noisyChamps)
+      (3KM noisyChamps gustaveEiffel)
+
+      (at RERB citeU)
+      (at RERA chateletA)
+      
+   )
+
+   (:goal (and (course-taken Fairouz)))
+)
+
