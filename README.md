@@ -4,6 +4,8 @@ STRIPS is a planning methodology for solving this challenge(See Project_Report.p
 
 It intelligently involves the execution of a sequence of actions to achieve a goal.
 
+**Note: Check the Project_Report.pdf  for more informations.**
+
 ## Installation
 
 Open cmd and type the following commands: 
